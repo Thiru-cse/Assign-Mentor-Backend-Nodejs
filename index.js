@@ -25,6 +25,7 @@ mongoose.connect(URL, {
 const connection = mongoose.connection;
 connection.on("open", () => console.log("MongoDB Connected"));
 
+
 app.get("/", (req, res) =>
   res.send(`
 <div>
